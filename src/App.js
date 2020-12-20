@@ -9,8 +9,8 @@ function App() {
         <p>
           Francisco Almeida
           <p className="App-desc">
-          BSc Finalist in Computer Science
-        </p>
+            BSc Finalist in Computer Science
+          </p>
         </p>
       </header>
     </div>

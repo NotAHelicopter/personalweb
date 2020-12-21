@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/personalweb/static/css/main.25943fac.chunk.css",
-    "main.js": "/personalweb/static/js/main.d1d18ecb.chunk.js",
-    "main.js.map": "/personalweb/static/js/main.d1d18ecb.chunk.js.map",
-    "runtime-main.js": "/personalweb/static/js/runtime-main.08771e60.js",
-    "runtime-main.js.map": "/personalweb/static/js/runtime-main.08771e60.js.map",
-    "static/js/2.2ade7eff.chunk.js": "/personalweb/static/js/2.2ade7eff.chunk.js",
-    "static/js/2.2ade7eff.chunk.js.map": "/personalweb/static/js/2.2ade7eff.chunk.js.map",
-    "static/js/3.4175b3a6.chunk.js": "/personalweb/static/js/3.4175b3a6.chunk.js",
-    "static/js/3.4175b3a6.chunk.js.map": "/personalweb/static/js/3.4175b3a6.chunk.js.map",
+    "main.css": "/personalweb/static/css/main.07ee8077.chunk.css",
+    "main.js": "/personalweb/static/js/main.bd734408.chunk.js",
+    "main.js.map": "/personalweb/static/js/main.bd734408.chunk.js.map",
+    "runtime-main.js": "/personalweb/static/js/runtime-main.decdb688.js",
+    "runtime-main.js.map": "/personalweb/static/js/runtime-main.decdb688.js.map",
+    "static/js/2.dc9943ba.chunk.js": "/personalweb/static/js/2.dc9943ba.chunk.js",
+    "static/js/2.dc9943ba.chunk.js.map": "/personalweb/static/js/2.dc9943ba.chunk.js.map",
+    "static/js/3.e79bd0f7.chunk.js": "/personalweb/static/js/3.e79bd0f7.chunk.js",
+    "static/js/3.e79bd0f7.chunk.js.map": "/personalweb/static/js/3.e79bd0f7.chunk.js.map",
     "index.html": "/personalweb/index.html",
-    "static/css/main.25943fac.chunk.css.map": "/personalweb/static/css/main.25943fac.chunk.css.map",
-    "static/js/2.2ade7eff.chunk.js.LICENSE.txt": "/personalweb/static/js/2.2ade7eff.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/personalweb/static/media/back2.0b5d3f0e.jpg",
+    "static/css/main.07ee8077.chunk.css.map": "/personalweb/static/css/main.07ee8077.chunk.css.map",
+    "static/js/2.dc9943ba.chunk.js.LICENSE.txt": "/personalweb/static/js/2.dc9943ba.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/personalweb/static/media/back2.0b5d3f0e.jpg",
     "static/media/pers1.f7ab80d0.png": "/personalweb/static/media/pers1.f7ab80d0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.08771e60.js",
-    "static/js/2.2ade7eff.chunk.js",
-    "static/css/main.25943fac.chunk.css",
-    "static/js/main.d1d18ecb.chunk.js"
+    "static/js/runtime-main.decdb688.js",
+    "static/js/2.dc9943ba.chunk.js",
+    "static/css/main.07ee8077.chunk.css",
+    "static/js/main.bd734408.chunk.js"
   ]
 }

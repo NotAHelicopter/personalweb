@@ -4,11 +4,14 @@ import './index.css';
 import Bar from './Bar';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Parts from "./particles";
+
 
 ReactDOM.render(
   <React.StrictMode>
     <Bar />
     <App />
+    <Parts />
   </React.StrictMode>,
   document.getElementById('root')
 );

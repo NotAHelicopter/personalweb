@@ -1,12 +1,14 @@
 .App {
   text-align: center;
-  background-image: url(./back2.jpg);
+  /* background-image: url(./back2.jpg);  */
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center; 
+  z-index: -2;
 }
+
 
 .App-pers {
   height: 28vmin;

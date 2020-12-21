@@ -10,6 +10,7 @@ import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { useEffect, useState } from 'react';
 
+
 const useStyles = makeStyles((theme) => ({
   paper :{
     backgroundColor: "#ffffff",
@@ -46,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   fabBut: {
-    backgroundColor: '#BEBEB5',
+    backgroundColor: 'transparent',
     size:"large",
     disableFocusRipple:"true",
     disableTouchRipple:"true",
@@ -161,8 +162,7 @@ function App() {
             <Fab size="large" className={classes.fabBut}>
               <KeyboardArrowUpIcon />
             </Fab>
-          </Button>
-          
+          </Button>        
         )} 
     </div>
   );

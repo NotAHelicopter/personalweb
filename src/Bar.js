@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
   bar: {
     alignItems: 'center',
-    backgroundColor: '#272D2D',
+    backgroundColor: 'transparent',
     blockSize: '65px',
     
   },

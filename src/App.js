@@ -5,15 +5,16 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
-
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { useEffect, useState } from 'react';
+import ListAltIcon from '@material-ui/icons/ListAlt';
 
 
 const useStyles = makeStyles((theme) => ({
   paper :{
-    backgroundColor: "#ffffff",
+    // eslint-disable-next-line
+    backgroundColor: "#030027" + 'cc',
     minWidth: 'flex',
     maxWidth: '500px',
     margin: 20,
@@ -21,7 +22,8 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '404px',
     },
   paper2: {
-    backgroundColor: "#ffffff",
+    // eslint-disable-next-line
+    backgroundColor: "#DD954C" + 'cc',
     minWidth: 'flex',
     maxWidth: '1015px',
     margin: 20,
@@ -33,10 +35,12 @@ const useStyles = makeStyles((theme) => ({
   },
   typoLong:{
     marginTop: 10,
+    color: "white",
   },
   typoLong2: {
     margin: 10,
     textAlign: 'left',
+    color:"white",
   },
   backTop: {
     position: 'fixed',
@@ -48,10 +52,14 @@ const useStyles = makeStyles((theme) => ({
   },
   fabBut: {
     backgroundColor: 'transparent',
-    size:"large",
-    disableFocusRipple:"true",
-    disableTouchRipple:"true",
-    disableRipple:"true",
+  },
+  downCV: {
+    position: 'fixed',
+    top: theme.spacing(10),
+    left: theme.spacing(2),
+    '&:hover': {
+      backgroundColor: 'transparent',
+    },
   }
 }));
 
@@ -74,7 +82,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={pers1} className="App-pers" alt="logo" />
-        <div>
+        <div className="app-name">
           Francisco Almeida
           <p className="App-desc">
             BSc Finalist in Computer Engineering
@@ -84,7 +92,7 @@ function App() {
         <Grid container className={classes.grid1} spacing={10}>
           <Grid container justify="center" spacing={5}>
             <Grid key={1} item>
-              <Paper elevation={15} className={classes.paper}> 
+              <Paper elevation={24} className={classes.paper}> 
                 <Typography variant='h3' className={classes.typoLong}>
                   About me
                 </Typography>
@@ -102,7 +110,7 @@ function App() {
               </Paper>
             </Grid>
             <Grid key={2} item>
-              <Paper elevation={15} className={classes.paper}>
+              <Paper elevation={24} className={classes.paper}>
                 <Typography variant='h3' className={classes.typoLong}>
                   Contact info / goals / Education ?
                 </Typography>
@@ -121,7 +129,7 @@ function App() {
             </Grid>
           </Grid>
           <Grid container justify="center">
-            <Paper elevation={15} className={classes.paper2}>
+            <Paper elevation={24} className={classes.paper2}>
               <Typography variant='h3' className={classes.typoLong}>
                   Experience
               </Typography>
@@ -148,6 +156,44 @@ function App() {
               </Typography>
             </Paper>
           </Grid>
+          <Grid container justify="center" spacing={5}>
+            <Grid key={1} item>
+              <Paper elevation={24} className={classes.paper}> 
+                <Typography variant='h3' className={classes.typoLong}>
+                  About me
+                </Typography>
+                <Typography variant ="subtitle1" className={classes.typoLong2}>
+                  I’m a 24 year old student, currently in the last year of my Computer Science bachelor’s degree at Instituto Superior Técnico.
+                  I greatly enjoy programming due to its similarities to puzzle and problem solving.
+                  <p> 
+                    I am great at working together in team environments and
+                    always strive to learn more and improve, as an aspiring Computer Engineer and as a person.
+                  </p>
+                  <p>
+                      I chose to create this small online portfolio as a way to showcase my experience with some technologies such as React, Node and Git.
+                  </p>
+                </Typography>
+              </Paper>
+            </Grid>
+            <Grid key={2} item>
+              <Paper elevation={24} className={classes.paper}>
+                <Typography variant='h3' className={classes.typoLong}>
+                  Contact info / goals / Education ?
+                </Typography>
+                <Typography variant ="subtitle1" className={classes.typoLong2}>
+                  I had the chance to participate in a summer internship in which my project was to build 
+                  a recruitment platform, with any technology I wanted. 
+                  I'll delve more into it later on.
+                  <p>
+                    Over the years I have worked in retail multiple times, which has helped with keeping grounded and in touch with reality.
+                  </p>
+                  <p>
+                    On my spare time, I previously worked with a translation company, helping translate and transcribe from english to portuguese, and vice versa.
+                  </p>
+                </Typography>
+              </Paper>
+            </Grid>
+          </Grid>
         </Grid>
         { window.scrollY > 100 && (
 
@@ -163,7 +209,15 @@ function App() {
               <KeyboardArrowUpIcon />
             </Fab>
           </Button>        
-        )} 
+        )}
+        <Button className={classes.downCV}
+          disableRipple= 'true'
+          disableFocusRipple='true'
+        >
+            <Fab color="secondary" size="large">
+              {<ListAltIcon/>} CV
+            </Fab>
+        </Button>
     </div>
   );
 }

@@ -17,6 +17,10 @@
   margin-bottom: 15px;
 }
 
+.app-name {
+  color:rgb(26, 26, 92);
+}
+
 .App-header {
   min-height: 60vh;
   display: flex;
@@ -24,7 +28,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
+  color: "#A7A7A7";
 }
 
 .App-desc {

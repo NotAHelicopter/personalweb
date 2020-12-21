@@ -5,7 +5,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import AssessmentIcon from '@material-ui/icons/Assessment';
 import ExtensionIcon from '@material-ui/icons/Extension';
-import ListAltIcon from '@material-ui/icons/ListAlt';
 import SmartphoneIcon from '@material-ui/icons/Smartphone';
 
 const useStyles = makeStyles((theme) => ({
@@ -14,16 +13,16 @@ const useStyles = makeStyles((theme) => ({
   },
   bar: {
     alignItems: 'center',
-    backgroundColor: 'transparent',
+    backgroundColor: '#030027',
     blockSize: '65px',
-    
+    opacity: 0.70,
   },
   buts: {
     borderRadius: 5,
     textTransform: 'none',
     marginLeft: 15, /*fix for mobile */
-    color : '#000000',
-    backgroundColor: '#ffffff',
+    color : '#ffffff',
+    backgroundColor: '#DD954C',
   }
 }));
 
@@ -48,11 +47,6 @@ export default function ButtonAppBar() {
             className={classes.buts}
             startIcon={<ExtensionIcon/>}
             >Hobbies</Button>
-
-          <Button variant="contained" 
-            className={classes.buts}
-            startIcon={<ListAltIcon/>}
-          >CV</Button>
 
           <Button variant="contained" 
             className={classes.buts}

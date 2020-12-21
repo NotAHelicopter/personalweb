@@ -16,6 +16,9 @@ export default () => (
       id="tsparticles"
       options={{
         background: {
+            color: {
+                value: "#ffffff"
+            }
         },
         fpsLimit: 60,
         interactivity: {
@@ -32,10 +35,6 @@ export default () => (
             },
             push: {
               quantity: 4,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
             },
           },
         },
@@ -58,7 +57,7 @@ export default () => (
             enable: true,
             outMode: "bounce",
             random: false,
-            speed: 2,
+            speed: 1,
             straight: false,
           },
           number: {
@@ -66,7 +65,7 @@ export default () => (
               enable: true,
               value_area: 800,
             },
-            value: 100,
+            value: 130,
           },
           opacity: {
             value: 0.5,

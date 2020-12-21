@@ -4,6 +4,11 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { Typography } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
+
+import Fab from '@material-ui/core/Fab';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import { useEffect, useState } from 'react';
 
 const useStyles = makeStyles((theme) => ({
   paper :{
@@ -14,6 +19,17 @@ const useStyles = makeStyles((theme) => ({
     padding: 10,
     minHeight: '404px',
     },
+  paper2: {
+    backgroundColor: "#ffffff",
+    minWidth: 'flex',
+    maxWidth: '1015px',
+    margin: 20,
+    padding: 10,
+    minHeight: '404px',
+  },
+  grid1: {
+    minWidth: 'flex',
+  },
   typoLong:{
     marginTop: 10,
   },
@@ -21,13 +37,37 @@ const useStyles = makeStyles((theme) => ({
     margin: 10,
     textAlign: 'left',
   },
-  grid1: {
-    marginTop: 10,
+  backTop: {
+    position: 'fixed',
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+    '&:hover': {
+      backgroundColor: 'transparent',
+    }
+  },
+  fabBut: {
+    backgroundColor: '#BEBEB5',
+    size:"large",
+    disableFocusRipple:"true",
+    disableTouchRipple:"true",
+    disableRipple:"true",
   }
 }));
 
+
 function App() {
   const classes = useStyles();
+
+  const [scroll, setScroll] = useState(0)
+  
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      const scrollCheck = window.scrollY < 100;
+        if (scrollCheck !== scroll) {
+          setScroll(scrollCheck)
+        }
+    });
+  })
 
   return (
     <div className="App">
@@ -39,7 +79,8 @@ function App() {
             BSc Finalist in Computer Engineering
           </p>
         </div>
-        <Grid container className={classes.grid1} spacing={2}>
+      </header>
+        <Grid container className={classes.grid1} spacing={10}>
           <Grid container justify="center" spacing={5}>
             <Grid key={1} item>
               <Paper elevation={15} className={classes.paper}> 
@@ -62,7 +103,7 @@ function App() {
             <Grid key={2} item>
               <Paper elevation={15} className={classes.paper}>
                 <Typography variant='h3' className={classes.typoLong}>
-                  A bit of my experience
+                  Contact info / goals / Education ?
                 </Typography>
                 <Typography variant ="subtitle1" className={classes.typoLong2}>
                   I had the chance to participate in a summer internship in which my project was to build 
@@ -78,8 +119,51 @@ function App() {
               </Paper>
             </Grid>
           </Grid>
+          <Grid container justify="center">
+            <Paper elevation={15} className={classes.paper2}>
+              <Typography variant='h3' className={classes.typoLong}>
+                  Experience
+              </Typography>
+              <Typography variant="h6" className={classes.typoLong2}>
+                Programming languages and technologies
+              </Typography>
+              <Typography variant="subtitle1" className={classes.typoLong2}>
+                I have previously coded in C, Java, Python, HTML, CSS, PHP, MySQL
+                  and have experience using NodeJs, OpenGL, Bash, and Git as well.
+              </Typography>
+              <Typography variant="h6" className={classes.typoLong2}>
+                Summer Internship at EDUdigital
+              </Typography>
+              <Typography variant="subtitle1" className={classes.typoLong2}>
+                I had the opportunity to participate in a summer internship under EDUdigital, in which I was given the chance to bla bla bla
+              </Typography>
+              <Typography variant="h6" className={classes.typoLong2}>
+                Retail work
+              </Typography>
+              <Typography variant="subtitle1" className={classes.typoLong2}>
+                I have worked in retail in several occasions, which has contributed to
+                the general improvement of my soft skills, adaptability and reaction
+                to unknown scenarios, as well as being involved in a teamwork environment
+              </Typography>
+            </Paper>
+          </Grid>
         </Grid>
-      </header>
+        { window.scrollY > 100 && (
+
+          <Button className={classes.backTop}
+          onClick={()=>{window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          })}}
+          disableRipple= 'true'
+          disableFocusRipple='true'
+          >
+            <Fab size="large" className={classes.fabBut}>
+              <KeyboardArrowUpIcon />
+            </Fab>
+          </Button>
+          
+        )} 
     </div>
   );
 }

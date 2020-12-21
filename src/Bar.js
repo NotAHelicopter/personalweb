@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     backgroundColor: '#272D2D',
     blockSize: '65px',
+    
   },
   buts: {
     borderRadius: 5,
@@ -31,12 +32,16 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" className={classes.bar}>
+      <AppBar position="fixed" className={classes.bar}>
         <Toolbar>
 
           <Button variant="contained" 
             className={classes.buts}
             startIcon={<AssessmentIcon/>}
+            onClick={()=>{window.scrollTo({
+              top: 2000,
+              behavior: 'smooth'
+            })}}
           >Experience</Button>
 
           <Button variant="contained" 

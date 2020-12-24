@@ -14,7 +14,7 @@ export default () => (
         left: 0,
         width: "100%",
         height: "100%",
-        zIndex: -1,
+        zIndex: 0,
         }}
     >    
     <header className="part-header">
@@ -30,71 +30,73 @@ export default () => (
     <Particles
         id="tsparticles"
         options={{
-            background: {
+            backgroundMode: {
+                enable: false,
+                zIndex: 0
+              },
+              fpsLimit: 60,
+              particles: {
+                number: {
+                  value: 50,
+                  density: {
+                    enable: true,
+                    value_area: 600 //Denser the smaller the number.
+                  }
+                },
                 color: {
-                    value: "#ffffff"
+                  //The color for every node, not the connecting lines.
+                  value: "#000000" //Or use an array of colors like ["#9b0000", "#001378", "#0b521f"]
+                },
+                shape: {
+                  type: "square", // Can show circle, edge (a square), triangle, polygon, star, img, or an array of multiple.
+                  stroke: {
+                    //The border
+                    width: 1,
+                    color: "#000000"
+                  },
+                  polygon: {
+                    //if the shape is a polygon
+                    nb_sides: 6
+                  },
+                  image: {
+                    //If the shape is an image
+                    src: "",
+                    width: 100,
+                    height: 100
+                  }
+                },
+                opacity: {
+                  value: 0.7,
+                  random: true
+                },
+                size: {
+                  value: 8,
+                  random: true
+                },
+                line_linked: {
+                  enable: true,
+                  distance: 225, //The radius before a line is added, the higher the number the more lines.
+                  color: "#000000",
+                  opacity: 0.2,
+                  width: 2
+                },
+                move: {
+                  enable: true,
+                  speed: 1,
+                  direction: "top", //Move them off the canvas, either "none", "top", "right", "bottom", "left", "top-right", "bottom-right" et cetera...
+                  random: true,
+                  straight: false, //Whether they'll shift left and right while moving.
+                  out_mode: "out", //What it'll do when it reaches the end of the canvas, either "out" or "bounce".
+                  bounce: false,
+                  attract: {
+                    //Make them start to clump together while moving.
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 1200
+                  }
                 }
-            },
-            fpsLimit: 60,
-            interactivity: {
-            detectsOn: "canvas",
-            events: {
-                resize: true,
-            },
-            modes: {
-                bubble: {
-                distance: 400,
-                duration: 2,
-                opacity: 0.8,
-                size: 40,
-                },
-                push: {
-                quantity: 4,
-                },
-            },
-            },
-            particles: {
-            color: {
-                value: "#000000",
-                opacity: 0.2,
-            },
-            links: {
-                color: "#000000",
-                distance: 150,
-                enable: true,
-                opacity: 0.2,
-                width: 1,
-            },
-            collisions: {
-                enable: true,
-            },
-            move: {
-                direction: "none",
-                enable: true,
-                outMode: "bounce",
-                random: false,
-                speed: 1,
-                straight: false,
-            },
-            number: {
-                density: {
-                enable: true,
-                value_area: 800,
-                },
-                value: 100,
-            },
-            opacity: {
-                value: 0.5,
-            },
-            shape: {
-                type: "square",
-            },
-            size: {
-                random: true,
-                value: 5,
-            },
-            },
-            detectRetina: true,
+              },
+              retina_detect: true
         }}
     />
     

@@ -125,7 +125,7 @@ function App() {
             <FadeInSection>
               <Paper elevation={24} className={classes.paper}>
                 <Typography variant='h3' className={classes.typoLong}>
-                  Contact info / goals / Education ?
+                  Education
                 </Typography>
                 <Typography variant ="subtitle1" className={classes.typoLong2}>
                   I had the chance to participate in a summer internship in which my project was to build 
@@ -173,7 +173,7 @@ function App() {
             <FadeInSection>
               <Paper elevation={24} className={classes.paper}>
                 <Typography variant='h3' className={classes.typoLong}>
-                  Contact info / goals / Education ?
+                  Contact info
                 </Typography>
                 <Typography variant ="subtitle1" className={classes.typoLong2}>
                   I had the chance to participate in a summer internship in which my project was to build 

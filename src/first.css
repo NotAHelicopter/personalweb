@@ -1,0 +1,40 @@
+.particles {
+    text-align: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: static;
+    background-position: fixed;
+    z-index: 0;
+  }
+  
+
+.part-name {
+    color:rgb(26, 26, 92);
+  }
+
+.part-pers {
+    height: 28vmin;
+    border-radius: 15%;
+    pointer-events: none;
+    margin-bottom: 15px;
+  }
+
+.part-header {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(30px + 2vmin);
+    color: "#A7A7A7";
+    z-index: 1;
+    position: absolute;
+    right: 40%;
+    bottom: 20%;
+  }
+  
+.part-desc {
+    color:rgb(4, 0, 58);
+    font-size: calc(15px + 1vmin);
+  }

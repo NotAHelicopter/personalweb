@@ -9,29 +9,32 @@ import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { useEffect, useState } from 'react';
 import ListAltIcon from '@material-ui/icons/ListAlt';
-
+import FadeInSection from "./fadein";
 
 const useStyles = makeStyles((theme) => ({
   paper :{
-    // eslint-disable-next-line
-    backgroundColor: "#030027" + 'cc',
-    minWidth: 'flex',
-    maxWidth: '500px',
-    margin: 20,
+    backgroundColor: "#016090",
+    minWidth: 1300,
+    maxWidth: 1300,
+    margin: 10,
     padding: 10,
     minHeight: '404px',
     },
+    paperAb :{
+      backgroundColor: "#016090",
+      minWidth: 'flex',
+      maxWidth: 600,
+      margin: 10,
+      padding: 10,
+      minHeight: '404px',
+      },
   paper2: {
-    // eslint-disable-next-line
-    backgroundColor: "#DD954C" + 'cc',
-    minWidth: 'flex',
-    maxWidth: '1015px',
+    backgroundColor: "#030027",
+    minWidth: 1300,
+    maxWidth: 1300,
     margin: 20,
     padding: 10,
     minHeight: '404px',
-  },
-  grid1: {
-    minWidth: 'flex',
   },
   typoLong:{
     marginTop: 10,
@@ -55,8 +58,8 @@ const useStyles = makeStyles((theme) => ({
   },
   downCV: {
     position: 'fixed',
-    top: theme.spacing(10),
-    left: theme.spacing(2),
+    top: theme.spacing(2),
+    left: theme.spacing(3),
     '&:hover': {
       backgroundColor: 'transparent',
     },
@@ -80,36 +83,46 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={pers1} className="App-pers" alt="logo" />
-        <div className="app-name">
-          Francisco Almeida
-          <p className="App-desc">
-            BSc Finalist in Computer Engineering
-          </p>
-        </div>
-      </header>
-        <Grid container className={classes.grid1} spacing={10}>
-          <Grid container justify="center" spacing={5}>
-            <Grid key={1} item>
-              <Paper elevation={24} className={classes.paper}> 
-                <Typography variant='h3' className={classes.typoLong}>
-                  About me
-                </Typography>
-                <Typography variant ="subtitle1" className={classes.typoLong2}>
-                  I’m a 24 year old student, currently in the last year of my Computer Science bachelor’s degree at Instituto Superior Técnico.
-                  I greatly enjoy programming due to its similarities to puzzle and problem solving.
-                  <p> 
-                    I am great at working together in team environments and
-                    always strive to learn more and improve, as an aspiring Computer Engineer and as a person.
-                  </p>
-                  <p>
+        <Grid container spacing={2}>
+          <Grid container justify="center" item spacing={2}>
+              <Grid key={1} item>
+                <FadeInSection>
+                <div className="App-header">
+                  <img src={pers1} className="App-pers" alt="logo" />
+                  <div className="app-name">
+                    Francisco Almeida
+                    <p className="App-desc">
+                      BSc Finalist in Computer Engineering
+                    </p>
+                  </div>
+                </div>
+                </FadeInSection>
+
+              </Grid>
+              <Grid key={2} item>
+               <FadeInSection>
+                <Paper elevation={24} className={classes.paperAb}> 
+                  <Typography variant='h3' className={classes.typoLong}>
+                    About me
+                  </Typography>
+                  <Typography variant ="subtitle1" className={classes.typoLong2}>
+                      I’m a 24 year old student, currently in the last year of my Computer Science bachelor’s degree at Instituto Superior Técnico.
+                      I greatly enjoy programming due to its similarities to puzzle and problem solving.
+                    <p> 
+                      I am great at working together in team environments and
+                      always strive to learn more and improve, as an aspiring Computer Engineer and as a person.
+                    </p>
+                    <p>
                       I chose to create this small online portfolio as a way to showcase my experience with some technologies such as React, Node and Git.
-                  </p>
-                </Typography>
-              </Paper>
-            </Grid>
-            <Grid key={2} item>
+                    </p>
+                  </Typography>
+                </Paper>
+                </FadeInSection>
+
+              </Grid>
+          </Grid>
+          <Grid container justify="center" item>
+            <FadeInSection>
               <Paper elevation={24} className={classes.paper}>
                 <Typography variant='h3' className={classes.typoLong}>
                   Contact info / goals / Education ?
@@ -126,9 +139,8 @@ function App() {
                   </p>
                 </Typography>
               </Paper>
-            </Grid>
-          </Grid>
-          <Grid container justify="center">
+            </FadeInSection>
+          <FadeInSection>
             <Paper elevation={24} className={classes.paper2}>
               <Typography variant='h3' className={classes.typoLong}>
                   Experience
@@ -155,27 +167,10 @@ function App() {
                 to unknown scenarios, as well as being involved in a teamwork environment
               </Typography>
             </Paper>
+          </FadeInSection>
           </Grid>
-          <Grid container justify="center" spacing={5}>
-            <Grid key={1} item>
-              <Paper elevation={24} className={classes.paper}> 
-                <Typography variant='h3' className={classes.typoLong}>
-                  About me
-                </Typography>
-                <Typography variant ="subtitle1" className={classes.typoLong2}>
-                  I’m a 24 year old student, currently in the last year of my Computer Science bachelor’s degree at Instituto Superior Técnico.
-                  I greatly enjoy programming due to its similarities to puzzle and problem solving.
-                  <p> 
-                    I am great at working together in team environments and
-                    always strive to learn more and improve, as an aspiring Computer Engineer and as a person.
-                  </p>
-                  <p>
-                      I chose to create this small online portfolio as a way to showcase my experience with some technologies such as React, Node and Git.
-                  </p>
-                </Typography>
-              </Paper>
-            </Grid>
-            <Grid key={2} item>
+          <Grid container justify="center" item spacing={5}>
+            <FadeInSection>
               <Paper elevation={24} className={classes.paper}>
                 <Typography variant='h3' className={classes.typoLong}>
                   Contact info / goals / Education ?
@@ -192,7 +187,7 @@ function App() {
                   </p>
                 </Typography>
               </Paper>
-            </Grid>
+            </FadeInSection>
           </Grid>
         </Grid>
         { window.scrollY > 100 && (
@@ -202,8 +197,8 @@ function App() {
             top: 0,
             behavior: 'smooth'
           })}}
-          disableRipple= 'true'
-          disableFocusRipple='true'
+          disableRipple
+          disableFocusRipple
           >
             <Fab size="large" className={classes.fabBut}>
               <KeyboardArrowUpIcon />
@@ -211,8 +206,8 @@ function App() {
           </Button>        
         )}
         <Button className={classes.downCV}
-          disableRipple= 'true'
-          disableFocusRipple='true'
+          disableRipple
+          disableFocusRipple
         >
             <Fab color="secondary" size="large">
               {<ListAltIcon/>} CV

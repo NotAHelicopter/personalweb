@@ -5,13 +5,15 @@ import Bar from './Bar';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Parts from "./particles";
+import Drawer from "./sideDrawer";
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Bar />
-    <App />
     <Parts />
+    {/* <Bar /> */}
+    <Drawer />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

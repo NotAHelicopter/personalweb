@@ -15,14 +15,14 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     backgroundColor: '#030027',
     blockSize: '65px',
-    opacity: 0.70,
+    opacity:1,
   },
   buts: {
     borderRadius: 5,
     textTransform: 'none',
     marginLeft: 15, /*fix for mobile */
     color : '#ffffff',
-    backgroundColor: '#DD954C',
+    backgroundColor: '#016090',
   }
 }));
 

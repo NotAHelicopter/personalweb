@@ -10,17 +10,19 @@ import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { useEffect, useState } from 'react';
 import ListAltIcon from '@material-ui/icons/ListAlt';
 import FadeInSection from "./fadein";
+import Divider from '@material-ui/core/Divider';
+import './first.css'
 
 const useStyles = makeStyles((theme) => ({
   paper :{
     backgroundColor: "#016090",
-    minWidth: 1300,
+    minWidth: 'flex',
     maxWidth: 1300,
     margin: 10,
     padding: 10,
     minHeight: '404px',
     },
-    paperAb :{
+  paperAb :{
       backgroundColor: "#016090",
       minWidth: 'flex',
       maxWidth: 600,
@@ -30,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
       },
   paper2: {
     backgroundColor: "#030027",
-    minWidth: 1300,
+    minWidth: 'flex',
     maxWidth: 1300,
     margin: 20,
     padding: 10,
@@ -63,6 +65,9 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       backgroundColor: 'transparent',
     },
+  },
+  grid1: {
+    marginTop: 10,
   }
 }));
 
@@ -83,7 +88,16 @@ function App() {
 
   return (
     <div className="App">
-        <Grid container spacing={2}>
+      <header className="part-header">
+            <div className="part-name">
+                Francisco Almeida
+                <Divider />
+                <p className="part-desc">
+                Interactive Resume
+                </p>
+            </div>
+      </header>
+        <Grid container spacing={2} className={classes.grid1}>
           <Grid container justify="center" item spacing={2}>
               <Grid key={1} item>
                 <FadeInSection>

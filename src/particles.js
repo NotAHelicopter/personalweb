@@ -1,8 +1,6 @@
 import React from "react";
 import Particles from "react-tsparticles";
-import Divider from '@material-ui/core/Divider';
 
-import './first.css'
 
 // eslint-disable-next-line
 export default () => (
@@ -13,20 +11,10 @@ export default () => (
         top: 0,
         left: 0,
         width: "100%",
-        height: "100%",
+        height: "50%",
         zIndex: 0,
         }}
     >    
-    <header className="part-header">
-            <div className="part-name">
-                Francisco Almeida
-                <Divider />
-                <p className="part-desc">
-                Interactive Resume
-                </p>
-            </div>
-    </header>
-
     <Particles
         id="tsparticles"
         options={{

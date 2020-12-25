@@ -1,6 +1,5 @@
 .particles {
     text-align: center;
-    overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: static;
@@ -23,15 +22,20 @@
 .part-header {
     min-height: 60vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(30px + 2vmin);
     color: "#A7A7A7";
-    z-index: 1;
     position: absolute;
     right: 40%;
     bottom: 20%;
+  }
+
+  @media only screen and (max-device-width: 480px) {
+    .part-header {
+      right: 10%;
+      bottom: 50%;
+    }
   }
   
 .part-desc {

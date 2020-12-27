@@ -15,37 +15,43 @@ import './first.css'
 
 const useStyles = makeStyles((theme) => ({
   paper :{
-    backgroundColor: "#016090",
-    minWidth: 'flex',
-    maxWidth: 1300,
+    backgroundColor: "transparent",
     margin: 10,
+    marginBottom: theme.spacing(5),
+    width: "100%",
     padding: 10,
     minHeight: '404px',
+    maxWidth: 1200,
     },
   paperAb :{
-      backgroundColor: "#016090",
+      backgroundColor: "transparent",
       minWidth: 'flex',
       maxWidth: 600,
       margin: 10,
       padding: 10,
       minHeight: '404px',
       },
-  paper2: {
-    backgroundColor: "#030027",
-    minWidth: 'flex',
-    maxWidth: 1300,
-    margin: 20,
-    padding: 10,
-    minHeight: '404px',
-  },
   typoLong:{
     marginTop: 10,
-    color: "white",
+    color: "black",
   },
   typoLong2: {
-    margin: 10,
+    marginRight: theme.spacing(3),
+    marginLeft: theme.spacing(3),
+    marginTop: theme.spacing(2),
     textAlign: 'left',
-    color:"white",
+    color:"black",
+  },
+  typoContact: {
+    marginTop: 10,
+    color: "#F9F9F9",
+  },
+  typoContact2: {
+    marginRight: theme.spacing(3),
+    marginLeft: theme.spacing(3),
+    marginTop: theme.spacing(2),
+    textAlign: 'left',
+    color:"#F9F9F9",
   },
   backTop: {
     position: 'fixed',
@@ -68,6 +74,28 @@ const useStyles = makeStyles((theme) => ({
   },
   grid1: {
     marginTop: 10,
+    backgroundColor: '#F9F9F9',
+  },
+  grid2: {
+    backgroundColor: '#B4E0E2',
+  },
+  grid3: {
+    backgroundColor: '#F9F9F9',
+  },
+  grid4: {
+    backgroundColor: '#B4E0E2',
+  },
+  grid5: {
+    backgroundColor: '#393939',
+  },
+  div: {
+    marginBottom: theme.spacing(4),
+    marginTop: theme.spacing(1),
+  },
+  divCont: {
+    marginBottom: theme.spacing(4),
+    marginTop: theme.spacing(1),
+    backgroundColor: '#ffffff',
   }
 }));
 
@@ -115,10 +143,11 @@ function App() {
               </Grid>
               <Grid key={2} item>
                <FadeInSection>
-                <Paper elevation={24} className={classes.paperAb}> 
+                <Paper elevation={0} className={classes.paperAb}> 
                   <Typography variant='h3' className={classes.typoLong}>
                     About me
                   </Typography>
+                  <Divider className={classes.div} />
                   <Typography variant ="subtitle1" className={classes.typoLong2}>
                       I’m a 24 year old student, currently in the last year of my Computer Science bachelor’s degree at Instituto Superior Técnico.
                       I greatly enjoy programming due to its similarities to puzzle and problem solving.
@@ -132,33 +161,37 @@ function App() {
                   </Typography>
                 </Paper>
                 </FadeInSection>
-
               </Grid>
           </Grid>
-          <Grid container justify="center" item>
-            <FadeInSection>
-              <Paper elevation={24} className={classes.paper}>
-                <Typography variant='h3' className={classes.typoLong}>
-                  Education
-                </Typography>
-                <Typography variant ="subtitle1" className={classes.typoLong2}>
-                  I had the chance to participate in a summer internship in which my project was to build 
-                  a recruitment platform, with any technology I wanted. 
-                  I'll delve more into it later on.
-                  <p>
-                    Over the years I have worked in retail multiple times, which has helped with keeping grounded and in touch with reality.
-                  </p>
-                  <p>
-                    On my spare time, I previously worked with a translation company, helping translate and transcribe from english to portuguese, and vice versa.
-                  </p>
-                </Typography>
-              </Paper>
-            </FadeInSection>
+        </Grid>
+        <Grid container justify="center" item className={classes.grid2}>
           <FadeInSection>
-            <Paper elevation={24} className={classes.paper2}>
+            <Paper elevation={0} className={classes.paper}>
+              <Typography variant='h3' className={classes.typoLong}>
+                Education
+              </Typography>
+              <Divider className={classes.div} />
+              <Typography variant ="subtitle1" className={classes.typoLong2}>
+                I had the chance to participate in a summer internship in which my project was to build 
+                a recruitment platform, with any technology I wanted. 
+                I'll delve more into it later on.
+                <p>
+                  Over the years I have worked in retail multiple times, which has helped with keeping grounded and in touch with reality.
+                </p>
+                <p>
+                  On my spare time, I previously worked with a translation company, helping translate and transcribe from english to portuguese, and vice versa.
+                </p>
+              </Typography>
+            </Paper>
+          </FadeInSection>
+        </Grid>
+        <Grid container justify="center" item className={classes.grid3}>
+          <FadeInSection>
+            <Paper elevation={0} className={classes.paper}>
               <Typography variant='h3' className={classes.typoLong}>
                   Experience
               </Typography>
+              <Divider className={classes.div} />
               <Typography variant="h6" className={classes.typoLong2}>
                 Programming languages and technologies
               </Typography>
@@ -182,51 +215,74 @@ function App() {
               </Typography>
             </Paper>
           </FadeInSection>
-          </Grid>
-          <Grid container justify="center" item spacing={5}>
-            <FadeInSection>
-              <Paper elevation={24} className={classes.paper}>
-                <Typography variant='h3' className={classes.typoLong}>
-                  Contact info
-                </Typography>
-                <Typography variant ="subtitle1" className={classes.typoLong2}>
-                  I had the chance to participate in a summer internship in which my project was to build 
-                  a recruitment platform, with any technology I wanted. 
-                  I'll delve more into it later on.
-                  <p>
-                    Over the years I have worked in retail multiple times, which has helped with keeping grounded and in touch with reality.
-                  </p>
-                  <p>
-                    On my spare time, I previously worked with a translation company, helping translate and transcribe from english to portuguese, and vice versa.
-                  </p>
-                </Typography>
-              </Paper>
-            </FadeInSection>
-          </Grid>
         </Grid>
-        { window.scrollY > 100 && (
 
-          <Button className={classes.backTop}
-          onClick={()=>{window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          })}}
-          disableRipple
-          disableFocusRipple
-          >
-            <Fab size="large" className={classes.fabBut}>
-              <KeyboardArrowUpIcon />
-            </Fab>
-          </Button>        
-        )}
-        <Button className={classes.downCV}
-          disableRipple
-          disableFocusRipple
+        <Grid container justify="center" item spacing={5} className={classes.grid4}>
+          <FadeInSection>
+            <Paper elevation={0} className={classes.paper}>
+              <Typography variant='h3' className={classes.typoLong}>
+                Hobbies
+              </Typography>
+              <Divider className={classes.div} />
+              <Typography variant ="subtitle1" className={classes.typoLong2}>
+                I had the chance to participate in a summer internship in which my project was to build 
+                a recruitment platform, with any technology I wanted. 
+                I'll delve more into it later on.
+                <p>
+                  Over the years I have worked in retail multiple times, which has helped with keeping grounded and in touch with reality.
+                </p>
+                <p>
+                  On my spare time, I previously worked with a translation company, helping translate and transcribe from english to portuguese, and vice versa.
+                </p>
+              </Typography>
+            </Paper>
+          </FadeInSection>
+        </Grid>
+
+        <Grid container justify="center" item spacing={5} className={classes.grid5}>
+          <FadeInSection>
+            <Paper elevation={0} className={classes.paper}>
+              <Typography variant='h3' className={classes.typoContact}>
+                Contact info
+              </Typography>
+              <Divider className={classes.divCont} />
+              <Typography variant ="subtitle1" className={classes.typoContact2}>
+                I had the chance to participate in a summer internship in which my project was to build 
+                a recruitment platform, with any technology I wanted. 
+                I'll delve more into it later on.
+                <p>
+                  Over the years I have worked in retail multiple times, which has helped with keeping grounded and in touch with reality.
+                </p>
+                <p>
+                  On my spare time, I previously worked with a translation company, helping translate and transcribe from english to portuguese, and vice versa.
+                </p>
+              </Typography>
+            </Paper>
+          </FadeInSection>
+        </Grid>
+      { window.scrollY > 100 && (
+
+        <Button className={classes.backTop}
+        onClick={()=>{window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        })}}
+        disableRipple
+        disableFocusRipple
         >
-            <Fab color="secondary" size="large">
-              {<ListAltIcon/>} CV
-            </Fab>
-        </Button>
+          <Fab size="large" className={classes.fabBut}>
+            <KeyboardArrowUpIcon />
+          </Fab>
+        </Button>        
+      )}
+      <Button className={classes.downCV}
+        disableRipple
+        disableFocusRipple
+      >
+          <Fab color="secondary" size="large">
+            {<ListAltIcon/>} CV
+          </Fab>
+      </Button>
     </div>
   );
 }

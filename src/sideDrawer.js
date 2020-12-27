@@ -18,15 +18,10 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
     height: 300,
-    marginTop: 100,
+    marginTop: theme.spacing(40),
     marginLeft:  theme.spacing(2),
-    backgroundColor: "#393939",
-    borderRadius: 10,
-  },
-  content: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
-    padding: theme.spacing(3),
+    backgroundColor: "#307473",
+    opacity: 0.7,
   },
   buttons: {
       height: 100,
@@ -47,21 +42,30 @@ export default function PermanentDrawerLeft() {
           paper: classes.drawerPaper,
         }}
         anchor="left"
-        elevation={16}
       >
         <Divider />
         <Button 
             className={classes.buttons}
             onClick={()=>{window.scrollTo({
-              top: 2000,
+              top: 1800,
               behavior: 'smooth'
             })}}
           >Experience</Button>
 
         <Divider />
-        <Button className={classes.buttons}>Hobbies</Button>
+        <Button className={classes.buttons}
+          onClick={()=>{window.scrollTo({
+            top: 2300,
+            behavior: 'smooth'
+          })}}
+          >Hobbies</Button>
         <Divider />
-        <Button className={classes.buttons}>Contacts</Button>
+        <Button className={classes.buttons}
+          onClick={()=>{window.scrollTo({
+            top: 2600,
+            behavior: 'smooth'
+          })}}
+          >Contacts</Button>
         <Divider />
       </Drawer>
     </div>

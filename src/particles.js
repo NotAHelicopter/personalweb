@@ -8,16 +8,16 @@ export default () => (
     <div 
         style={{
         position: "static",
-        top: 0,
-        left: 0,
         width: "100%",
-        height: "50%",
         zIndex: 0,
         }}
     >    
     <Particles
         id="tsparticles"
         options={{
+            background: {
+              color: "#B4E0E2",
+            },
             backgroundMode: {
                 enable: false,
                 zIndex: 0
@@ -33,14 +33,14 @@ export default () => (
                 },
                 color: {
                   //The color for every node, not the connecting lines.
-                  value: "#000000" //Or use an array of colors like ["#9b0000", "#001378", "#0b521f"]
+                  value: "#FEFCFD" //Or use an array of colors like ["#9b0000", "#001378", "#0b521f"]
                 },
                 shape: {
                   type: "square", // Can show circle, edge (a square), triangle, polygon, star, img, or an array of multiple.
                   stroke: {
                     //The border
                     width: 1,
-                    color: "#000000"
+                    color: "#FEFCFD"
                   },
                   polygon: {
                     //if the shape is a polygon
@@ -54,7 +54,7 @@ export default () => (
                   }
                 },
                 opacity: {
-                  value: 0.7,
+                  value: 1,
                   random: true
                 },
                 size: {
@@ -64,8 +64,8 @@ export default () => (
                 line_linked: {
                   enable: true,
                   distance: 225, //The radius before a line is added, the higher the number the more lines.
-                  color: "#000000",
-                  opacity: 0.2,
+                  color: "#FEFCFD",
+                  opacity: 0.8,
                   width: 2
                 },
                 move: {

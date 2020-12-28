@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     opacity: 0.7,
     '&:hover': {
       opacity: 1,
+    },
+    [theme.breakpoints.down('sm')]: {
+      opacity: 0.9,
     }
   },
   buttons: {

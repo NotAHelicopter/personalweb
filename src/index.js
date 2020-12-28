@@ -6,10 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import Parts from "./particles";
 // eslint-disable-next-line
 import Bar from './Bar' 
-
+import Drawer from './sideDrawer'
 ReactDOM.render(
   <React.StrictMode>
     <Parts/>
+    <Drawer />
+
      {/* <Bar />  */}
     <App />
   </React.StrictMode>,

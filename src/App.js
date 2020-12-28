@@ -12,7 +12,6 @@ import ListAltIcon from '@material-ui/icons/ListAlt';
 import FadeInSection from "./fadein";
 import Divider from '@material-ui/core/Divider';
 import './first.css';
-import Drawer from "./sideDrawer";
 
 const useStyles = makeStyles((theme) => ({
   paper :{
@@ -114,9 +113,9 @@ function App() {
     });
   })
 
+
   return (
     <div className="App">
-      <Drawer />
       <header className="part-header">
             <div className="part-name">
                 Francisco Almeida
@@ -165,7 +164,7 @@ function App() {
               </Grid>
           </Grid>
         </Grid>
-        <Grid container justify="center" item className={classes.grid2}>
+        <Grid id="edu" container justify="center" item className={classes.grid2}>
           <FadeInSection>
             <Paper elevation={0} className={classes.paper}>
               <Typography variant='h3' className={classes.typoLong}>
@@ -186,10 +185,10 @@ function App() {
             </Paper>
           </FadeInSection>
         </Grid>
-        <Grid container justify="center" item className={classes.grid3}>
+        <Grid id="exp" container justify="center" item className={classes.grid3}>
           <FadeInSection>
             <Paper elevation={0} className={classes.paper}>
-              <Typography variant='h3' className={classes.typoLong}>
+              <Typography  variant='h3' className={classes.typoLong}>
                   Experience
               </Typography>
               <Divider className={classes.div} />
@@ -218,7 +217,7 @@ function App() {
           </FadeInSection>
         </Grid>
 
-        <Grid container justify="center" item spacing={5} className={classes.grid4}>
+        <Grid id="hob" container justify="center" item spacing={5} className={classes.grid4}>
           <FadeInSection>
             <Paper elevation={0} className={classes.paper}>
               <Typography variant='h3' className={classes.typoLong}>
@@ -240,7 +239,7 @@ function App() {
           </FadeInSection>
         </Grid>
 
-        <Grid container justify="center" item spacing={5} className={classes.grid5}>
+        <Grid id="cont" container justify="center" item spacing={5} className={classes.grid5}>
           <FadeInSection>
             <Paper elevation={0} className={classes.paper}>
               <Typography variant='h3' className={classes.typoContact}>

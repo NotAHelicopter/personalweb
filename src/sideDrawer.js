@@ -24,10 +24,13 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
     height: 400,
-    marginTop: theme.spacing(40),
+    marginTop: theme.spacing(20),
     marginLeft:  theme.spacing(2),
     backgroundColor: "#307473",
     opacity: 0.7,
+    '&:hover': {
+      opacity: 1,
+    }
   },
   buttons: {
       height: 100,
@@ -35,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
       color: "#ffffff",
   },
   menuButton: {
-    top: theme.spacing(50),
+    zIndex: 10,
+    top: theme.spacing(30),
     left: theme.spacing(1),
     position: "fixed",
     opacity: 0.4,

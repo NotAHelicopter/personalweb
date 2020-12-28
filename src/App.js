@@ -89,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
   },
   grid5: {
     backgroundColor: '#393939',
-    maxHeight: 300,
+    maxHeight: 'flex',
   },
   div: {
     marginBottom: theme.spacing(4),

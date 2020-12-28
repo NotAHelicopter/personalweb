@@ -113,7 +113,6 @@ function App() {
     });
   })
 
-
   return (
     <div className="App">
       <header className="part-header">
@@ -275,14 +274,17 @@ function App() {
           </Fab>
         </Button>        
       )}
-      <Button className={classes.downCV}
-        disableRipple
-        disableFocusRipple
-      >
-          <Fab color="secondary" size="large">
-            {<ListAltIcon/>} CV
-          </Fab>
-      </Button>
+
+      <a href={"../public/FranciscoAlmeidaCv.pdf"} download="cvFranciscoAlmeida">
+        <Button className={classes.downCV}
+          disableRipple
+          disableFocusRipple
+        >
+            <Fab color="secondary" size="large">
+              {<ListAltIcon/>} CV
+            </Fab>
+        </Button>
+      </a>
     </div>
   );
 }

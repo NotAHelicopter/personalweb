@@ -3,7 +3,7 @@ import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import { Typography } from '@material-ui/core';
+import { Typography, Link } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
@@ -12,6 +12,8 @@ import ListAltIcon from '@material-ui/icons/ListAlt';
 import FadeInSection from "./fadein";
 import Divider from '@material-ui/core/Divider';
 import './first.css';
+
+import CV from './FranciscoAlmeidaCv.pdf'
 
 const useStyles = makeStyles((theme) => ({
   paper :{
@@ -70,6 +72,7 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       backgroundColor: 'transparent',
     },
+    
   },
   grid1: {
     marginTop: theme.spacing(1),
@@ -269,22 +272,22 @@ function App() {
         disableRipple
         disableFocusRipple
         >
-          <Fab size="large" className={classes.fabBut}>
-            <KeyboardArrowUpIcon />
-          </Fab>
+            <Fab size="large" className={classes.fabBut}>
+              <KeyboardArrowUpIcon />
+            </Fab>
+          
         </Button>        
-      )}
-
-      <a href={require("./FranciscoAlmeidaCv.pdf")} download="cvFranciscoAlmeida">
+      )} 
         <Button className={classes.downCV}
           disableRipple
           disableFocusRipple
         >
+          <Link href={CV} download="CV_Francisco_Almeida" underline="none">
             <Fab color="secondary" size="large">
               {<ListAltIcon/>} CV
             </Fab>
+          </Link>
         </Button>
-      </a>
     </div>
   );
 }

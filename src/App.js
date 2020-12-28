@@ -275,7 +275,7 @@ function App() {
         </Button>        
       )}
 
-      <a href={"../public/FranciscoAlmeidaCv.pdf"} download="cvFranciscoAlmeida">
+      <a href={require("./FranciscoAlmeidaCv.pdf")} download="cvFranciscoAlmeida">
         <Button className={classes.downCV}
           disableRipple
           disableFocusRipple

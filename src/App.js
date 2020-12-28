@@ -16,12 +16,12 @@ import './first.css';
 const useStyles = makeStyles((theme) => ({
   paper :{
     backgroundColor: "transparent",
+    minWidth: 'flex',
+    maxWidth: 1200,
     margin: 10,
-    marginBottom: theme.spacing(5),
-    width: "100%",
     padding: 10,
     minHeight: '404px',
-    maxWidth: 1200,
+    marginBottom: theme.spacing(5),
     },
   paperAb :{
       backgroundColor: "transparent",
@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   grid1: {
-    marginTop: 10,
+    marginTop: theme.spacing(1),
     backgroundColor: '#F9F9F9',
   },
   grid2: {
@@ -121,12 +121,12 @@ function App() {
                 Francisco Almeida
                 <Divider />
                 <p className="part-desc">
-                Interactive Resume
+                Online Resume
                 </p>
             </div>
       </header>
         <Grid container spacing={2} className={classes.grid1}>
-          <Grid container justify="center" item spacing={2}>
+          <Grid container justify="center" item spacing={0}>
               <Grid key={1} item>
                 <FadeInSection>
                 <div className="App-header">
@@ -217,7 +217,7 @@ function App() {
           </FadeInSection>
         </Grid>
 
-        <Grid id="hob" container justify="center" item spacing={5} className={classes.grid4}>
+        <Grid id="hob" container justify="center" item spacing={0} className={classes.grid4}>
           <FadeInSection>
             <Paper elevation={0} className={classes.paper}>
               <Typography variant='h3' className={classes.typoLong}>
@@ -239,7 +239,7 @@ function App() {
           </FadeInSection>
         </Grid>
 
-        <Grid id="cont" container justify="center" item spacing={5} className={classes.grid5}>
+        <Grid id="cont" container justify="center" item spacing={0} className={classes.grid5}>
           <FadeInSection>
             <Paper elevation={0} className={classes.paper}>
               <Typography variant='h3' className={classes.typoContact}>

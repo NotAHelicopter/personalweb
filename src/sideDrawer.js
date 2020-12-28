@@ -36,8 +36,12 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     top: theme.spacing(50),
-    left: theme.spacing(2),
+    left: theme.spacing(1),
     position: "fixed",
+    opacity: 0.4,
+    '&:hover': {
+      opacity: 1,
+    }
   },
   hide: {
     display: 'none',

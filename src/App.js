@@ -11,7 +11,8 @@ import { useEffect, useState } from 'react';
 import ListAltIcon from '@material-ui/icons/ListAlt';
 import FadeInSection from "./fadein";
 import Divider from '@material-ui/core/Divider';
-import './first.css'
+import './first.css';
+import Drawer from "./sideDrawer";
 
 const useStyles = makeStyles((theme) => ({
   paper :{
@@ -43,7 +44,6 @@ const useStyles = makeStyles((theme) => ({
     color:"black",
   },
   typoContact: {
-    marginTop: 10,
     color: "#F9F9F9",
   },
   typoContact2: {
@@ -104,7 +104,7 @@ function App() {
   const classes = useStyles();
 
   const [scroll, setScroll] = useState(0)
-  
+
   useEffect(() => {
     document.addEventListener('scroll', () => {
       const scrollCheck = window.scrollY < 100;
@@ -116,6 +116,7 @@ function App() {
 
   return (
     <div className="App">
+      <Drawer />
       <header className="part-header">
             <div className="part-name">
                 Francisco Almeida

@@ -4,14 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Parts from "./particles";
-import Drawer from "./sideDrawer";
-
+// eslint-disable-next-line
+import Bar from './Bar' 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Parts />
-    {/* <Bar /> */}
-    <Drawer />
+    <Parts/>
+     {/* <Bar />  */}
     <App />
   </React.StrictMode>,
   document.getElementById('root')

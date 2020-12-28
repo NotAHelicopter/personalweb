@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PermanentDrawerLeft() {
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
       <Drawer
@@ -61,10 +60,12 @@ export default function PermanentDrawerLeft() {
           >Hobbies</Button>
         <Divider />
         <Button className={classes.buttons}
-          onClick={()=>{window.scrollTo({
-            top: 2600,
-            behavior: 'smooth'
-          })}}
+          onClick={()=>{
+            window.scrollTo({
+              behavior: 'smooth',
+              top: 2500,
+            })
+          }}
           >Contacts</Button>
         <Divider />
       </Drawer>

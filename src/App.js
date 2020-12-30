@@ -244,6 +244,10 @@ function App() {
               <Typography variant="h6" className={classes.typoSub}>
                     Relevant subjects towards fullstack / frontend development
               </Typography>
+              <Typography variant='caption' className={classes.typoLong}>
+                Subject and respective grade of conclusion
+              </Typography>
+              <Divider className={classes.divSkill} />
               <GradeTable/>
             </Paper>
           </FadeInSection>

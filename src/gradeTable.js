@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     typoLong2: {
         marginTop: theme.spacing(2),
-        fontSize: 15,
+        fontSize: 13,
     },
     typoLong: {
         fontSize: 20,
@@ -51,7 +51,7 @@ export default function GradeTab() {
         <Grid key={2} item>
             <Paper elevation={0} className={classes.paperAb}> 
                 <Typography variant='body1' className={classes.typoLong}>
-                    Concluded with an average of 
+                    Grade
                 </Typography>
                 <Typography variant ="subtitle1" className={classes.typoLong2}>
                     14/20

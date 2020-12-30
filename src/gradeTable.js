@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(0.5),
         [theme.breakpoints.down('sm')]: {
             marginTop: theme.spacing(2),
+            marginLeft: theme.spacing(-3.5),
           }
     },
     typoLong2: {
@@ -35,8 +36,8 @@ export default function GradeTab() {
 
   return (
     <FadeInSection>
-    <Grid container justify="center" spacing={1} className={classes.grid1}>
-        <Grid key={1} item>
+    <Grid container justify="center" spacing={5}  className={classes.grid1} md={12}>
+        <Grid key={1} item md={3}>
         <Paper elevation={0} className={classes.paperAb}> 
                 <Typography variant='body1'  align="center" className={classes.typoLong}>
                 Subject
@@ -48,9 +49,9 @@ export default function GradeTab() {
                 </Typography>
             </Paper>
         </Grid>   
-        <Grid key={2} item>
+        <Grid key={2} item md={3}>
             <Paper elevation={0} className={classes.paperAb}> 
-                <Typography variant='body1' className={classes.typoLong}>
+                <Typography variant='body1' align="center" className={classes.typoLong}>
                     Grade
                 </Typography>
                 <Typography variant ="subtitle1" className={classes.typoLong2}>

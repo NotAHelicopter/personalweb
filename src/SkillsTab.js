@@ -34,7 +34,7 @@ export default function SkillsTab() {
     <Grid container justify="center" spacing={3} className={classes.grid1}>
         
         <Grid key={1} item>
-        <Paper elevation={0} className={classes.paperAb}> 
+            <Paper elevation={0} className={classes.paperAb}> 
                 <Typography variant='h5'  align="center" className={classes.typoLong}>
                 Professional
                 </Typography>

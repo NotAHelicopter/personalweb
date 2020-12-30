@@ -18,6 +18,7 @@ import ListAltIcon from '@material-ui/icons/ListAlt';
 import FadeInSection from "./fadein";
 import Divider from '@material-ui/core/Divider';
 import SkillsTable from './SkillsTab';
+import GradeTable from './gradeTable';
 import './first.css';
 
 import CV from './FranciscoAlmeidaCv.pdf'
@@ -29,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 1200,
     margin: 10,
     padding: 10,
-    minHeight: '404px',
     marginBottom: theme.spacing(5),
     },
   paperAb :{
@@ -229,7 +229,7 @@ function App() {
               </Typography>
               <Divider className={classes.div} />
               <Typography variant="h5" className={classes.typoSub}>
-                    College
+                    University
               </Typography>
               <div className={classes.eduLogo}>
                   <img src={istlogo} className={classes.eduLogo} height={86} width={344.5} alt="edu" />
@@ -241,6 +241,10 @@ function App() {
                   Instituto Superior Técnico was my college of choice due to its extremely good reputation in teaching and bla bla bla
                   bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla
               </Typography>
+              <Typography variant="h6" className={classes.typoSub}>
+                    Relevant subjects towards fullstack / frontend development
+              </Typography>
+              <GradeTable/>
             </Paper>
           </FadeInSection>
         </Grid>
@@ -257,6 +261,9 @@ function App() {
                   <div className={classes.eduLogo}>
                       <img src={edulogo} className={classes.eduLogo} height={50} width={250} alt="edu" />
                   </div>
+                  <Typography variant="body1" className={classes.typoSub}>
+                    July 2020 - September 2020
+                  </Typography>
                   <Paper elevation={0} className={classes.paperExp}>                                    
                     <Typography variant="subtitle1" className={classes.typoLong2}>
                     I had the opportunity to participate in a summer internship under EDUdigital, in which I was given the chance to bla bla bla
@@ -267,11 +274,14 @@ function App() {
                     </Typography>
                   </Paper>
               <Typography variant="h5" className={classes.typoSub}>
-                Transcription and Translation at
+                Transcription / Translation at
               </Typography>
               <div className={classes.eduLogo}>
                       <img src={logotranscript} className={classes.eduLogo} height={58} width={213} alt="edu" />
               </div>
+                <Typography variant="body1" className={classes.typoSub}>
+                    November 2019 - April 2020
+                </Typography>
               <Typography variant="subtitle1" className={classes.typoLong2}>
                 I have worked in retail in several occasions, which has contributed to
                 the general improvement of my soft skills, adaptability and reaction
@@ -300,15 +310,7 @@ function App() {
               </Typography>
               <Divider className={classes.div} />
               <Typography variant ="subtitle1" className={classes.typoLong2}>
-                I had the chance to participate in a summer internship in which my project was to build 
-                a recruitment platform, with any technology I wanted. 
-                I'll delve more into it later on.
-                <p>
-                  Over the years I have worked in retail multiple times, which has helped with keeping grounded and in touch with reality.
-                </p>
-                <p>
-                  On my spare time, I previously worked with a translation company, helping translate and transcribe from english to portuguese, and vice versa.
-                </p>
+                
               </Typography>
             </Paper>
           </FadeInSection>

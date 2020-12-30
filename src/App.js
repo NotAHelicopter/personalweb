@@ -34,6 +34,14 @@ const useStyles = makeStyles((theme) => ({
       padding: 10,
       minHeight: '404px',
       },
+  paperCont :{
+    backgroundColor: "transparent",
+    minWidth: 'flex',
+    maxWidth: 1200,
+    margin: 10,
+    padding: 10,
+    marginBottom: theme.spacing(5),
+  },
   typoLong:{
     marginTop: 10,
     color: "black",
@@ -227,7 +235,7 @@ function App() {
               <Typography variant="h5"  className={classes.typoSkill}>
                 Programming languages and technologies
               </Typography>
-              <Typography variant='h7' className={classes.typoLong}>
+              <Typography variant='caption' className={classes.typoLong}>
                 Divided between academic and professional experience
                 </Typography>
               <Divider className={classes.divSkill} />
@@ -260,7 +268,7 @@ function App() {
 
         <Grid id="cont" container justify="center" item spacing={0} className={classes.grid5}>
           <FadeInSection>
-            <Paper elevation={0} className={classes.paper}>
+            <Paper elevation={0} className={classes.paperCont}>
               <Typography variant='h3' className={classes.typoContact}>
                 Contact info
               </Typography>

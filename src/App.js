@@ -1,6 +1,8 @@
 import pers1 from './pers1.png';
 import edulogo from './edulogo.png';
 import istlogo from './istlogotrans.png';
+import logotranscript from './logotranscript.png';
+
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -58,6 +60,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(3),
     marginLeft: theme.spacing(3),
     marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(5),
     textAlign: 'left',
     color:"black",
   },
@@ -144,7 +147,16 @@ const useStyles = makeStyles((theme) => ({
   linkedin: {
     color: "#ffffff",
     fontSize: 50,
+    marginTop: theme.spacing(3),
+    marginLeft: theme.spacing(1),
+    verticalAlign: '-30%',
   },
+  linBut: {
+    textTransform: 'none',
+    color: '#ffffff',
+    textDecoration: 'none',
+    marginRight: theme.spacing(2),
+  }
 }));
 
 
@@ -255,8 +267,11 @@ function App() {
                     </Typography>
                   </Paper>
               <Typography variant="h5" className={classes.typoSub}>
-                Retail work
+                Transcription and Translation at
               </Typography>
+              <div className={classes.eduLogo}>
+                      <img src={logotranscript} className={classes.eduLogo} height={58} width={213} alt="edu" />
+              </div>
               <Typography variant="subtitle1" className={classes.typoLong2}>
                 I have worked in retail in several occasions, which has contributed to
                 the general improvement of my soft skills, adaptability and reaction
@@ -309,10 +324,12 @@ function App() {
               <Typography variant ="h5" className={classes.typoContact2}>
                 Get in touch with me
               </Typography>
-              <LinkedInIcon className={classes.linkedin} />
-                <Link>test</Link>
-              <EmailIcon className={classes.linkedin}/>
-                <Link className={classes.contLinks}>frpv.almeida@gmail.com</Link>
+                  <Link href="https://www.linkedin.com/in/francisco-almeida-ba61a3183/" className={classes.linBut}>
+                    <LinkedInIcon className={classes.linkedin} /> LinkedIn 
+                  </Link>
+                  <Link href={"mailto: frpv.almeida@gmail.com"} className={classes.linBut}>
+                    <EmailIcon className={classes.linkedin}/> Email
+                  </Link>
             </Paper>
           </FadeInSection>
         </Grid>

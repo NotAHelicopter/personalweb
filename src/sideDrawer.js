@@ -83,7 +83,6 @@ export default function PermanentDrawerLeft() {
       </IconButton>
       <Drawer
         className={classes.drawer}
-        variant="persistent"
         open={open}
         classes={{
           paper: classes.drawerPaper,

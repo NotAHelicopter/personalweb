@@ -40,8 +40,9 @@ export default function SkillsTab() {
                 </Typography>
                 <Typography variant ="subtitle1" className={classes.typoLong2}>
                     ReactJs
-                    <p>NextJs</p>
+                    <p>NodeJs</p>
                     <p>ExpressJs</p>
+                    <p>NextJs</p>
                     <p>Javascript</p>
                     <p>MySQL</p>
                     <p>HTML</p>

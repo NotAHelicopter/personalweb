@@ -1,5 +1,6 @@
 import pers1 from './pers1.png';
-import edulogo from './edulogo.png'
+import edulogo from './edulogo.png';
+import istlogo from './istlogotrans.png';
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -8,6 +9,8 @@ import { Typography, Link } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import Fab from '@material-ui/core/Fab';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
 import { useEffect, useState } from 'react';
 import ListAltIcon from '@material-ui/icons/ListAlt';
 import FadeInSection from "./fadein";
@@ -136,7 +139,12 @@ const useStyles = makeStyles((theme) => ({
   },
   eduLogo: {
     marginTop: theme.spacing(1),
-  }
+    backgroundColor: 'transparent',
+  },
+  linkedin: {
+    color: "#ffffff",
+    fontSize: 50,
+  },
 }));
 
 
@@ -208,16 +216,18 @@ function App() {
                 Education
               </Typography>
               <Divider className={classes.div} />
+              <Typography variant="h5" className={classes.typoSub}>
+                    College
+              </Typography>
+              <div className={classes.eduLogo}>
+                  <img src={istlogo} className={classes.eduLogo} height={86} width={344.5} alt="edu" />
+              </div>
+              <Typography variant="body1" className={classes.typoSub}>
+                    Bsc in Computer Engineering
+              </Typography>
               <Typography variant ="subtitle1" className={classes.typoLong2}>
-                I had the chance to participate in a summer internship in which my project was to build 
-                a recruitment platform, with any technology I wanted. 
-                I'll delve more into it later on.
-                <p>
-                  Over the years I have worked in retail multiple times, which has helped with keeping grounded and in touch with reality.
-                </p>
-                <p>
-                  On my spare time, I previously worked with a translation company, helping translate and transcribe from english to portuguese, and vice versa.
-                </p>
+                  Instituto Superior Técnico was my college of choice due to its extremely good reputation in teaching and bla bla bla
+                  bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla
               </Typography>
             </Paper>
           </FadeInSection>
@@ -293,20 +303,16 @@ function App() {
           <FadeInSection>
             <Paper elevation={0} className={classes.paperCont}>
               <Typography variant='h3' className={classes.typoContact}>
-                Contact info
+                Contact Information
               </Typography>
               <Divider className={classes.divCont} />
-              <Typography variant ="subtitle1" className={classes.typoContact2}>
-                I had the chance to participate in a summer internship in which my project was to build 
-                a recruitment platform, with any technology I wanted. 
-                I'll delve more into it later on.
-                <p>
-                  Over the years I have worked in retail multiple times, which has helped with keeping grounded and in touch with reality.
-                </p>
-                <p>
-                  On my spare time, I previously worked with a translation company, helping translate and transcribe from english to portuguese, and vice versa.
-                </p>
+              <Typography variant ="h5" className={classes.typoContact2}>
+                Get in touch with me
               </Typography>
+              <LinkedInIcon className={classes.linkedin} />
+                <Link>test</Link>
+              <EmailIcon className={classes.linkedin}/>
+                <Link className={classes.contLinks}>frpv.almeida@gmail.com</Link>
             </Paper>
           </FadeInSection>
         </Grid>

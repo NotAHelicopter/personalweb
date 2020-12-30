@@ -1,4 +1,5 @@
 import pers1 from './pers1.png';
+import edulogo from './edulogo.png'
 import './App.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -34,6 +35,10 @@ const useStyles = makeStyles((theme) => ({
       padding: 10,
       minHeight: '404px',
       },
+  paperExp: {
+    backgroundColor: "transparent",
+    minWidth: 'flex',
+  },
   paperCont :{
     backgroundColor: "transparent",
     minWidth: 'flex',
@@ -51,6 +56,13 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(3),
     marginTop: theme.spacing(2),
     textAlign: 'left',
+    color:"black",
+  },
+  typoSub: {
+    marginRight: theme.spacing(3),
+    marginLeft: theme.spacing(3),
+    marginTop: theme.spacing(2),
+    textAlign: 'center',
     color:"black",
   },
   typoSkill: {
@@ -122,6 +134,9 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: theme.spacing(0),
     }
   },
+  eduLogo: {
+    marginTop: theme.spacing(1),
+  }
 }));
 
 
@@ -150,8 +165,7 @@ function App() {
                 </p>
             </div>
       </header>
-        <Grid container spacing={2} className={classes.grid1}>
-          <Grid container justify="center" item spacing={0}>
+        <Grid container justify="center" spacing={2} className={classes.grid1}>
               <Grid key={1} item>
                 <FadeInSection>
                 <div className="App-header">
@@ -164,7 +178,6 @@ function App() {
                   </div>
                 </div>
                 </FadeInSection>
-
               </Grid>
               <Grid key={2} item>
                <FadeInSection>
@@ -187,7 +200,6 @@ function App() {
                 </Paper>
                 </FadeInSection>
               </Grid>
-          </Grid>
         </Grid>
         <Grid id="edu" container justify="center" item className={classes.grid2}>
           <FadeInSection>
@@ -215,21 +227,32 @@ function App() {
             <Paper elevation={0} className={classes.paper}>
               <Typography  variant='h3' className={classes.typoLong}>
                   Experience
-                  <Divider className={classes.div} />
-
+                <Divider className={classes.div} />
               </Typography>
-              <Typography variant="h6" className={classes.typoLong2}>
-                Summer Internship at EDUdigital
-              </Typography>
-              <Typography variant="subtitle1" className={classes.typoLong2}>
-                I had the opportunity to participate in a summer internship under EDUdigital, in which I was given the chance to bla bla bla
-              </Typography>
-              <Typography variant="h6" className={classes.typoLong2}>
+                  <Typography variant="h5" className={classes.typoSub}>
+                    Summer Internship at
+                  </Typography>
+                  <div className={classes.eduLogo}>
+                      <img src={edulogo} className={classes.eduLogo} height={50} width={250} alt="edu" />
+                  </div>
+                  <Paper elevation={0} className={classes.paperExp}>                                    
+                    <Typography variant="subtitle1" className={classes.typoLong2}>
+                    I had the opportunity to participate in a summer internship under EDUdigital, in which I was given the chance to bla bla bla
+                    I had the opportunity to participate in a summer internship under EDUdigital, rtssdstestin which I was given the chance to bla bla bla
+                    I had the opportunity to participate in a summer internship under EDUdigital, in which I was given the chance to bla bla bla
+                    I had the opportunity to participate in a summer internship under EDUdigital, in which I was given the chance to bla bla bla
+                    I had the opportunity to participate in a summer internship under EDUdigital, in which I was given the chance to bla bla bla
+                    </Typography>
+                  </Paper>
+              <Typography variant="h5" className={classes.typoSub}>
                 Retail work
               </Typography>
               <Typography variant="subtitle1" className={classes.typoLong2}>
                 I have worked in retail in several occasions, which has contributed to
                 the general improvement of my soft skills, adaptability and reaction
+                to unknown scenarios, as well as being involved in a teamwork environment         
+                to unknown scenarios, as well as being involved in a teamwork environment
+                to unknown scenarios, as well as being involved in a teamwork environment
                 to unknown scenarios, as well as being involved in a teamwork environment
               </Typography>
               <Typography variant="h5"  className={classes.typoSkill}>
@@ -239,7 +262,7 @@ function App() {
                 Divided between academic and professional experience
                 </Typography>
               <Divider className={classes.divSkill} />
-              <SkillsTable/>          
+              <SkillsTable/>
             </Paper>
           </FadeInSection>
         </Grid>

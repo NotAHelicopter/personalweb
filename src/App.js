@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 import ListAltIcon from '@material-ui/icons/ListAlt';
 import FadeInSection from "./fadein";
 import Divider from '@material-ui/core/Divider';
+import SkillsTable from './SkillsTab';
 import './first.css';
 
 import CV from './FranciscoAlmeidaCv.pdf'
@@ -44,6 +45,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'left',
     color:"black",
   },
+  typoSkill: {
+    textAlign: 'center',
+    color:"black",
+    marginTop: theme.spacing(4),
+  },
   typoContact: {
     color: "#F9F9F9",
   },
@@ -51,7 +57,6 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(3),
     marginLeft: theme.spacing(3),
     marginTop: theme.spacing(2),
-    textAlign: 'left',
     color:"#F9F9F9",
   },
   backTop: {
@@ -99,7 +104,16 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(4),
     marginTop: theme.spacing(1),
     backgroundColor: '#ffffff',
-  }
+  },
+  divSkill: {
+    marginTop: theme.spacing(2),
+    width: "50%",
+    marginLeft: theme.spacing(35),
+    [theme.breakpoints.down('sm')]: {
+      width:"100%",
+      marginLeft: theme.spacing(0),
+    }
+  },
 }));
 
 
@@ -193,14 +207,8 @@ function App() {
             <Paper elevation={0} className={classes.paper}>
               <Typography  variant='h3' className={classes.typoLong}>
                   Experience
-              </Typography>
-              <Divider className={classes.div} />
-              <Typography variant="h6" className={classes.typoLong2}>
-                Programming languages and technologies
-              </Typography>
-              <Typography variant="subtitle1" className={classes.typoLong2}>
-                I have previously coded in C, Java, Python, HTML, CSS, PHP, MySQL
-                  and have experience using NodeJs, OpenGL, Bash, and Git as well.
+                  <Divider className={classes.div} />
+
               </Typography>
               <Typography variant="h6" className={classes.typoLong2}>
                 Summer Internship at EDUdigital
@@ -216,6 +224,14 @@ function App() {
                 the general improvement of my soft skills, adaptability and reaction
                 to unknown scenarios, as well as being involved in a teamwork environment
               </Typography>
+              <Typography variant="h5"  className={classes.typoSkill}>
+                Programming languages and technologies
+              </Typography>
+              <Typography variant='h7' className={classes.typoLong}>
+                Divided between academic and professional experience
+                </Typography>
+              <Divider className={classes.divSkill} />
+              <SkillsTable/>          
             </Paper>
           </FadeInSection>
         </Grid>

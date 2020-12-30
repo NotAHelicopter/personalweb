@@ -14,7 +14,10 @@ const useStyles = makeStyles((theme) => ({
         padding: 10,
         },
     grid1: {
-        marginTop: theme.spacing(2),
+        marginTop: theme.spacing(0.5),
+        [theme.breakpoints.down('sm')]: {
+            marginTop: theme.spacing(2),
+          }
     },
     typoLong2: {
         marginTop: theme.spacing(2),
@@ -46,7 +49,7 @@ export default function SkillsTab() {
                     <p>Material-UI</p>
                 </Typography>
             </Paper>
-        </Grid>
+        </Grid>   
         <Grid key={2} item>
             <Paper elevation={0} className={classes.paperAb}> 
                 <Typography variant='h5' className={classes.typoLong}>
@@ -59,6 +62,8 @@ export default function SkillsTab() {
                     <p>PHP</p>
                     <p>PostgreSQL</p>
                     <p>Python</p>
+                    <p>Git</p>
+                    <p>Bash</p>
                 </Typography>
             </Paper>
         </Grid>

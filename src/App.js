@@ -31,6 +31,14 @@ const useStyles = makeStyles((theme) => ({
     padding: 10,
     marginBottom: theme.spacing(5),
     },
+    paper2 :{
+      backgroundColor: "transparent",
+      minWidth: 'flex',
+      maxWidth: 900,
+      margin: 10,
+      padding: 10,
+      marginBottom: theme.spacing(5),
+      },
   paperAb :{
       backgroundColor: "transparent",
       minWidth: 'flex',
@@ -259,7 +267,7 @@ function App() {
         </Grid>
         <Grid id="exp" container justify="center" item className={classes.grid3}>
           <FadeInSection>
-            <Paper elevation={0} className={classes.paper}>
+            <Paper elevation={0} className={classes.paper2}>
               <Typography  variant='h3' className={classes.typoLong}>
                   Experience
                 <Divider className={classes.div} />
@@ -309,7 +317,7 @@ function App() {
 
         <Grid id="hob" container justify="center" item spacing={0} className={classes.grid4}>
           <FadeInSection>
-            <Paper elevation={0} className={classes.paper}>
+            <Paper elevation={0} className={classes.paper2}>
               <Typography variant='h3' className={classes.typoLong}>
                 Hobbies
               </Typography>

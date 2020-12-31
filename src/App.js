@@ -207,14 +207,18 @@ function App() {
                   </Typography>
                   <Divider className={classes.div} />
                   <Typography variant ="subtitle1" className={classes.typoLong2}>
-                      I’m a 24 year old student, currently in the last year of my Computer Science bachelor’s degree at Instituto Superior Técnico.
-                      I greatly enjoy programming due to its similarities to puzzle and problem solving.
+                      I'm a 24 year old student and aspiring frontend / fullstack developer, living in Sintra, Portugal.
+                      Currently in the last semester of my Computer Engineering Bachelor's degree at Instituto Superior Técnico.
+
                     <p> 
-                      I am great at working together in team environments and
-                      always strive to learn more and improve, as an aspiring Computer Engineer and as a person.
+                      Programming has always been a passion of mine due to how simillar it feels to puzzle solving and I always strive to find the
+                      most efficient solution to a problem. 
                     </p>
+                      I greatly enjoy working in team environments as they provide a fantastic growth and learning opportunity, both in terms of
+                      personal and professional development.
                     <p>
-                      I chose to create this small online portfolio as a way to showcase my experience with some technologies such as React, Node and Git.
+                      I created this small online resume as a way of showcasing some of my abilities and experience with a few technologies such as
+                      ReactJs, and CSS.
                     </p>
                   </Typography>
                 </Paper>
@@ -238,8 +242,18 @@ function App() {
                     Bsc in Computer Engineering
               </Typography>
               <Typography variant ="subtitle1" className={classes.typoLong2}>
-                  Instituto Superior Técnico was my college of choice due to its extremely good reputation in teaching and bla bla bla
-                  bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla and bla bla bla bla bla bla bla
+                Instituto Superior Técnico was my college of choice due to its extremely good reputation in teaching and amazing professors.
+                During my stay at IST I've made great connections with colleagues and gained a generous amount of experience on working under pressure and
+                in different fields of computer engineering.
+                <p></p>
+                Throughout my bachelor's at IST I've completed several projects, from which some of the most interesting were:
+                <p>
+                Operating Systems : development of a fully functional file system, with multi-threading programming and server-client socket comunication.<br />
+                &emsp;This project was extremely interesting to develop as a first contact with multi-threading programming. 
+                </p>
+                Distributed Systems : development of "Sauron", a camera recognizition based application with client information input and server processing.
+                <br />&emsp;Built with Java, using Maven and tested with JUnit.
+                <br />&emsp;Client - Server comunication with gRPC
               </Typography>
               <Typography variant="h6" className={classes.typoSub}>
                     Relevant subjects towards fullstack / frontend development
@@ -270,11 +284,10 @@ function App() {
                   </Typography>
                   <Paper elevation={0} className={classes.paperExp}>                                    
                     <Typography variant="subtitle1" className={classes.typoLong2}>
-                    I had the opportunity to participate in a summer internship under EDUdigital, in which I was given the chance to bla bla bla
-                    I had the opportunity to participate in a summer internship under EDUdigital, rtssdstestin which I was given the chance to bla bla bla
-                    I had the opportunity to participate in a summer internship under EDUdigital, in which I was given the chance to bla bla bla
-                    I had the opportunity to participate in a summer internship under EDUdigital, in which I was given the chance to bla bla bla
-                    I had the opportunity to participate in a summer internship under EDUdigital, in which I was given the chance to bla bla bla
+                    During which I was tasked with solo fullstack development a recruitment application, with "carte blanche" where it came to technologies.<br/>
+                    The main objective of this application was to facilitate the recruitment process for EDUdigital.<br/>
+                    <br/>Technologies: ReactJs (NextJs and Material-UI), NodeJs (expressJs), MySQL
+
                     </Typography>
                   </Paper>
               <Typography variant="h5" className={classes.typoSub}>
@@ -287,12 +300,9 @@ function App() {
                     November 2019 - April 2020
                 </Typography>
               <Typography variant="subtitle1" className={classes.typoLong2}>
-                I have worked in retail in several occasions, which has contributed to
-                the general improvement of my soft skills, adaptability and reaction
-                to unknown scenarios, as well as being involved in a teamwork environment         
-                to unknown scenarios, as well as being involved in a teamwork environment
-                to unknown scenarios, as well as being involved in a teamwork environment
-                to unknown scenarios, as well as being involved in a teamwork environment
+                Trying to sharpen my english skills, I decided to apply to a transcription / translating online company. <br/>
+                During my time in GoTranscript I performed dozens of transcriptions and translations with my lowest evaluation being a 92%.<br/>
+                Eventually, due to the increasing demand in time from university, I had to stop my services at GoTranscript.
               </Typography>
               <Typography variant="h5"  className={classes.typoSkill}>
                 Programming languages and technologies
@@ -313,8 +323,27 @@ function App() {
                 Hobbies
               </Typography>
               <Divider className={classes.div} />
-              <Typography variant ="subtitle1" className={classes.typoLong2}>
-                
+              <Typography variant ="h5" className={classes.typoSkill}>
+                Fitness         
+              </Typography>
+              <Typography variant="subtitle1" className={classes.typoLong2}>
+                Having interests such as computer engineering and programming, I found that having fitness as a hobby was a necessity. <br/>
+                After some time it became a strong personal passion and an integral part of my day to day life.
+              </Typography>
+              <Typography variant ="h5" className={classes.typoSkill}>
+                Longboarding         
+              </Typography>
+              <Typography variant="subtitle1" className={classes.typoLong2}>
+                A more recent interest, longboarding is a great hobby that allows me to exercise in a pandemic-friendly manner.
+                I find it extremely relaxing and liberating.
+              </Typography>
+              <Typography variant ="h5" className={classes.typoSkill}>
+                DnD         
+              </Typography>
+              <Typography variant="subtitle1" className={classes.typoLong2}>
+                I've been playing DnD for the better part of the last two years, with weekly sessions with a close group of friends.<br/>
+                Dnd is an amazing game with huge potential where it comes to sparking creative thought and entertainment.<br/>
+                I've both been a Dungeon Master (person responsible for running the game) and a player.
               </Typography>
             </Paper>
           </FadeInSection>

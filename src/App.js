@@ -217,7 +217,7 @@ function App() {
                       I greatly enjoy working in team environments as they provide a fantastic growth and learning opportunity, both in terms of
                       personal and professional development.
                     <p>
-                      I created this small online resume as a way of showcasing some of my abilities and experience with a few technologies such as
+                      The decision to create this small online resume came as a way of showcasing some of my abilities and experience with a few technologies such as
                       ReactJs, and CSS.
                     </p>
                   </Typography>
@@ -239,21 +239,21 @@ function App() {
                   <img src={istlogo} className={classes.eduLogo} height={86} width={344.5} alt="edu" />
               </div>
               <Typography variant="body1" className={classes.typoSub}>
-                    Bsc in Computer Engineering
+                    BSc in Computer Engineering
               </Typography>
               <Typography variant ="subtitle1" className={classes.typoLong2}>
-                Instituto Superior Técnico was my college of choice due to its extremely good reputation in teaching and amazing professors.
-                During my stay at IST I've made great connections with colleagues and gained a generous amount of experience on working under pressure and
+                Instituto Superior Técnico was my college of choice due to its excellent reputation in education and outstanding professors.
+                During my studies at IST I've made great connections with colleagues and gained a generous amount of experience on working under pressure and
                 in different fields of computer engineering.
                 <p></p>
-                Throughout my bachelor's at IST I've completed several projects, from which some of the most interesting were:
+                Throughout my bachelor's at IST I've completed several projects, out of which some of the most interesting are detailed below:
                 <p>
-                Operating Systems : development of a fully functional file system, with multi-threading programming and server-client socket comunication.<br />
-                &emsp;This project was extremely interesting to develop as a first contact with multi-threading programming. 
+                Operating Systems : development of a fully functional file system, with multi-threading programming and server-client socket communication.<br />
+                &emsp;This project was exceptionally interesting to develop as a first contact with multi-threading programming. 
                 </p>
-                Distributed Systems : development of "Sauron", a camera recognizition based application with client information input and server processing.
+                Distributed Systems : development of "Sauron", a camera recognition based application with client information input and server processing.
                 <br />&emsp;Built with Java, using Maven and tested with JUnit.
-                <br />&emsp;Client - Server comunication with gRPC
+                <br />&emsp;Client - Server communication with gRPC
               </Typography>
               <Typography variant="h6" className={classes.typoSub}>
                     Relevant subjects towards fullstack / frontend development
@@ -284,7 +284,7 @@ function App() {
                   </Typography>
                   <Paper elevation={0} className={classes.paperExp}>                                    
                     <Typography variant="subtitle1" className={classes.typoLong2}>
-                    During which I was tasked with solo fullstack development a recruitment application, with "carte blanche" where it came to technologies.<br/>
+                    During the internship I was tasked with the individual development of a fullstack recruitment application, having been given total freedom of choice when it came to technologies.
                     The main objective of this application was to facilitate the recruitment process for EDUdigital.<br/>
                     <br/>Technologies: ReactJs (NextJs and Material-UI), NodeJs (expressJs), MySQL
 
@@ -300,7 +300,7 @@ function App() {
                     November 2019 - April 2020
                 </Typography>
               <Typography variant="subtitle1" className={classes.typoLong2}>
-                Trying to sharpen my english skills, I decided to apply to a transcription / translating online company. <br/>
+                Trying to sharpen my english skills, I decided to apply to a transcription / translation online company. <br/>
                 During my time in GoTranscript I performed dozens of transcriptions and translations with my lowest evaluation being a 92%.<br/>
                 Eventually, due to the increasing demand in time from university, I had to stop my services at GoTranscript.
               </Typography>
@@ -327,18 +327,18 @@ function App() {
                 Fitness         
               </Typography>
               <Typography variant="subtitle1" className={classes.typoLong2}>
-                Having interests such as computer engineering and programming, I found that having fitness as a hobby was a necessity. <br/>
+                Due to having interests such as computer engineering and programming, I found that having fitness as a hobby was a necessity. <br/>
                 After some time it became a strong personal passion and an integral part of my day to day life.
               </Typography>
               <Typography variant ="h5" className={classes.typoSkill}>
                 Longboarding         
               </Typography>
               <Typography variant="subtitle1" className={classes.typoLong2}>
-                A more recent interest, longboarding is a great hobby that allows me to exercise in a pandemic-friendly manner.
+                A more recent interest of mine is longboarding, a great hobby that allows me to exercise in a pandemic-friendly manner.
                 I find it extremely relaxing and liberating.
               </Typography>
               <Typography variant ="h5" className={classes.typoSkill}>
-                DnD         
+                Dungeons and Dragons         
               </Typography>
               <Typography variant="subtitle1" className={classes.typoLong2}>
                 I've been playing DnD for the better part of the last two years, with weekly sessions with a close group of friends.<br/>

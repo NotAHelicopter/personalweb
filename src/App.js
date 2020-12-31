@@ -18,7 +18,6 @@ import ListAltIcon from '@material-ui/icons/ListAlt';
 import FadeInSection from "./fadein";
 import Divider from '@material-ui/core/Divider';
 import SkillsTable from './SkillsTab';
-import GradeTable from './gradeTable';
 import './first.css';
 
 import CV from './FranciscoAlmeidaCv.pdf'
@@ -255,14 +254,6 @@ function App() {
                 <br />&emsp;Built with Java, using Maven and tested with JUnit.
                 <br />&emsp;Client - Server communication with gRPC
               </Typography>
-              <Typography variant="h6" className={classes.typoSub}>
-                    Relevant subjects towards fullstack / frontend development
-              </Typography>
-              <Typography variant='caption' className={classes.typoLong}>
-                Subject and respective grade of conclusion
-              </Typography>
-              <Divider className={classes.divSkill} />
-              <GradeTable/>
             </Paper>
           </FadeInSection>
         </Grid>

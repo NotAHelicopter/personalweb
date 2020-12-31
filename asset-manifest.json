@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/personalweb/static/css/main.00c89f71.chunk.css",
-    "main.js": "/personalweb/static/js/main.bc3adc56.chunk.js",
-    "main.js.map": "/personalweb/static/js/main.bc3adc56.chunk.js.map",
+    "main.css": "/personalweb/static/css/main.56056c9d.chunk.css",
+    "main.js": "/personalweb/static/js/main.2fa5a8b8.chunk.js",
+    "main.js.map": "/personalweb/static/js/main.2fa5a8b8.chunk.js.map",
     "runtime-main.js": "/personalweb/static/js/runtime-main.8bd25403.js",
     "runtime-main.js.map": "/personalweb/static/js/runtime-main.8bd25403.js.map",
     "static/js/2.5c3c0c89.chunk.js": "/personalweb/static/js/2.5c3c0c89.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e702831a.chunk.js": "/personalweb/static/js/3.e702831a.chunk.js",
     "static/js/3.e702831a.chunk.js.map": "/personalweb/static/js/3.e702831a.chunk.js.map",
     "index.html": "/personalweb/index.html",
-    "static/css/main.00c89f71.chunk.css.map": "/personalweb/static/css/main.00c89f71.chunk.css.map",
+    "static/css/main.56056c9d.chunk.css.map": "/personalweb/static/css/main.56056c9d.chunk.css.map",
     "static/js/2.5c3c0c89.chunk.js.LICENSE.txt": "/personalweb/static/js/2.5c3c0c89.chunk.js.LICENSE.txt",
     "static/media/FranciscoAlmeidaCv.9fed3e7e.pdf": "/personalweb/static/media/FranciscoAlmeidaCv.9fed3e7e.pdf",
     "static/media/edulogo.656cb6c0.png": "/personalweb/static/media/edulogo.656cb6c0.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.8bd25403.js",
     "static/js/2.5c3c0c89.chunk.js",
-    "static/css/main.00c89f71.chunk.css",
-    "static/js/main.bc3adc56.chunk.js"
+    "static/css/main.56056c9d.chunk.css",
+    "static/js/main.2fa5a8b8.chunk.js"
   ]
 }

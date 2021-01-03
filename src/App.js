@@ -341,7 +341,7 @@ function App() {
               </Typography>
               <Typography variant="subtitle1" className={classes.typoLong2}>
                 I've been playing DnD for the better part of the last two years, with weekly sessions with a close group of friends.<br/>
-                Dnd is an amazing game with huge potential where it comes to sparking creative thought and entertainment.<br/>
+                DnD is an amazing game with huge potential where it comes to sparking creative thought and entertainment.<br/>
                 I've both been a Dungeon Master (person responsible for running the game) and a player.
               </Typography>
             </Paper>

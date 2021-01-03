@@ -20,7 +20,7 @@ import Divider from '@material-ui/core/Divider';
 import SkillsTable from './SkillsTab';
 import './first.css';
 
-import CV from './FranciscoAlmeidaCv.pdf'
+import CV from './FranciscoAlmeidaCV.pdf'
 
 const useStyles = makeStyles((theme) => ({
   paper :{
@@ -218,7 +218,7 @@ function App() {
                       Currently in the last semester of my Computer Engineering Bachelor's degree at Instituto Superior Técnico.
 
                     <p> 
-                      Programming has always been a passion of mine due to how simillar it feels to puzzle solving and I always strive to find the
+                      Programming has always been a passion of mine due to how similar it feels to puzzle solving and I always strive to find the
                       most efficient solution to a problem. 
                     </p>
                       I greatly enjoy working in team environments as they provide a fantastic growth and learning opportunity, both in terms of
